@@ -1,6 +1,0 @@
-framework module Pods_TryRxSwiftNew {
-  umbrella header "Pods-TryRxSwiftNew-umbrella.h"
-
-  export *
-  module * { export * }
-}
