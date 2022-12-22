@@ -10,7 +10,7 @@
 		43B344566CF0CF6995CEA85E /* Pods_TryRxSwiftNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD215E4F073E06738F546B30 /* Pods_TryRxSwiftNew.framework */; };
 		EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA49295340560018C435 /* AppDelegate.swift */; };
 		EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4B295340560018C435 /* SceneDelegate.swift */; };
-		EF96DA4E295340560018C435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4D295340560018C435 /* ViewController.swift */; };
+		EF96DA4E295340560018C435 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4D295340560018C435 /* MainVC.swift */; };
 		EF96DA51295340560018C435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA4F295340560018C435 /* Main.storyboard */; };
 		EF96DA53295340570018C435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA52295340570018C435 /* Assets.xcassets */; };
 		EF96DA56295340570018C435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA54295340570018C435 /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		EF96DA46295340560018C435 /* TryRxSwiftNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryRxSwiftNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF96DA49295340560018C435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96DA4B295340560018C435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF96DA4D295340560018C435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF96DA4D295340560018C435 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		EF96DA50295340560018C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF96DA52295340570018C435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF96DA55295340570018C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 				7B4A5CD00EF4FD2BF55C2905 /* Pods-TryRxSwiftNew.debug.xcconfig */,
 				9CA0B907DE5A3C61A7555889 /* Pods-TryRxSwiftNew.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,7 +82,7 @@
 			children = (
 				EF96DA49295340560018C435 /* AppDelegate.swift */,
 				EF96DA4B295340560018C435 /* SceneDelegate.swift */,
-				EF96DA4D295340560018C435 /* ViewController.swift */,
+				EF96DA4D295340560018C435 /* MainVC.swift */,
 				EF96DA4F295340560018C435 /* Main.storyboard */,
 				EF96DA52295340570018C435 /* Assets.xcassets */,
 				EF96DA54295340570018C435 /* LaunchScreen.storyboard */,
@@ -207,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF96DA4E295340560018C435 /* ViewController.swift in Sources */,
+				EF96DA4E295340560018C435 /* MainVC.swift in Sources */,
 				EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */,
 				EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */,
 			);
