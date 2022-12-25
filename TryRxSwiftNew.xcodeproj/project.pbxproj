@@ -14,6 +14,8 @@
 		EF96DA51295340560018C435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA4F295340560018C435 /* Main.storyboard */; };
 		EF96DA53295340570018C435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA52295340570018C435 /* Assets.xcassets */; };
 		EF96DA56295340570018C435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA54295340570018C435 /* LaunchScreen.storyboard */; };
+		EFE356EA2958E08400590284 /* Ch03-Challenge02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356E92958E08300590284 /* Ch03-Challenge02.swift */; };
+		EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EF96DA52295340570018C435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF96DA55295340570018C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF96DA57295340570018C435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE356E92958E08300590284 /* Ch03-Challenge02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ch03-Challenge02.swift"; sourceTree = "<group>"; };
+		EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter03-Subjects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				EF96DA52295340570018C435 /* Assets.xcassets */,
 				EF96DA54295340570018C435 /* LaunchScreen.storyboard */,
 				EF96DA57295340570018C435 /* Info.plist */,
+				EFE356E92958E08300590284 /* Ch03-Challenge02.swift */,
+				EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */,
 			);
 			path = TryRxSwiftNew;
 			sourceTree = "<group>";
@@ -207,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF96DA4E295340560018C435 /* MainVC.swift in Sources */,
+				EFE356EA2958E08400590284 /* Ch03-Challenge02.swift in Sources */,
 				EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */,
 				EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */,
+				EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ7HWU3SD7;
+				DEVELOPMENT_TEAM = AJ7MW2XDAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryRxSwiftNew/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,7 +393,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KZ7HWU3SD7;
+				DEVELOPMENT_TEAM = AJ7MW2XDAX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TryRxSwiftNew/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

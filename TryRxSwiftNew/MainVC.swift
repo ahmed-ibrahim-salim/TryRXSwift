@@ -2,37 +2,31 @@
 //  ViewController.swift
 //  TryRxSwiftNew
 //
-//  Created by magdy khalifa on 21/12/2022.
+//  Created by Ahmed ibrahim on 21/12/2022.
 //
 
 import UIKit
 import RxSwift
+import RxRelay
+
+
 
 class MainVC: UIViewController {
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        let subject = PublishSubject<String>()
-
-        subject.on(.next("Is anyone listening?"))
-        
-        let subscribtion1 = subject
-            .subscribe(onNext: {
-                print($0)
-            })
-        
-        subject.on(.next("1"))
-            
+        Challenge2.runChallenge()
     }
-
+    
 }
 
+
 extension MainVC{
-    // Chapter2 Observables
+    //MARK: - Chapter2 Observables
     func observablesChapter(){
-        let disposeBag = DisposeBag()
         
         
         let one = 1
@@ -49,48 +43,48 @@ extension MainVC{
         
         let observable4 = Observable.from([one, two, three])
         
-                let subscriber = observable4.subscribe(
-                    // these are events listeners
-                    onNext: {
-                        element in
-                        print(element)
-                    },
-                    onCompleted: {
-                        // does not have element
-                        print("completed")
+        let subscriber = observable4.subscribe(
+            // these are events listeners
+            onNext: {
+                element in
+                print(element)
+            },
+            onCompleted: {
+                // does not have element
+                print("completed")
+                
+            }
+        ).disposed(by: disposeBag)
+        //--------------------------------
+        //create
+        let observableWithCreate = Observable<String>.create{
+            observer in
+            // 1
+            observer.onNext("1")
+            // 2
+            observer.onCompleted()
+            // 3
+            observer.onNext("?")
+            // 4
+            return Disposables.create()
+        }
         
-                    }
-                ).disposed(by: disposeBag)
-         //--------------------------------
-         //create
-                let observableWithCreate = Observable<String>.create{
-                    observer in
-                    // 1
-                      observer.onNext("1")
-                      // 2
-                      observer.onCompleted()
-                    // 3
-                      observer.onNext("?")
-                    // 4
-                      return Disposables.create()
-                }
+        observableWithCreate.subscribe(
+            onNext: {
+                print($0)
+            },
+            onError: {
+                print($0)
+            },
+            onCompleted: {
+                print("completed")
+            },
+            onDisposed: {
+                print("disposed")
+            }
+        ).disposed(by: disposeBag)
         
-                observableWithCreate.subscribe(
-                    onNext: {
-                        print($0)
-                    },
-                    onError: {
-                        print($0)
-                    },
-                    onCompleted: {
-                        print("completed")
-                    },
-                    onDisposed: {
-                        print("disposed")
-                    }
-                ).disposed(by: disposeBag)
         
-            
         
         // challenge 1
         let observable = Observable<Any>.never()
@@ -99,17 +93,17 @@ extension MainVC{
             onSubscribe: {
                 print("subscribed")
             })
-            .subscribe(
+        .subscribe(
             onNext: { element in
-            print(element)
-          },
-          onCompleted: {
-            print("Completed")
-          },
-          onDisposed: {
-            print("Disposed")
-          }
+                print(element)
+            },
+            onCompleted: {
+                print("Completed")
+            },
+            onDisposed: {
+                print("Disposed")
+            }
         )
-        .disposed(by: disposeBag)
-    }
+            .disposed(by: disposeBag)
+            }
 }
