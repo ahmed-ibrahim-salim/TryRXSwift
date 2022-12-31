@@ -18,7 +18,38 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        takeWhileExample()
+        diffBetweenObservableSubject()
+    }
+}
+extension MainVC{
+    
+    func diffBetweenObservableSubject(){
+        // read-only
+        let observable = Observable<Int>.of(1, 2, 3, 4, 5)
+        
+        // observable is read-only means that it does not accept values.
+        observable.onNext()
+        
+        // you can only subscribe to observable
+        observable.subscribe({
+            event in
+            print(event.element)
+        })
+        
+        // ---------------------------------------------------------
+        let subject = PublishSubject<Int>()
+        
+        // similar to observable, you can subscribe to subject
+        subject.subscribe({
+            event in
+            print(event.element)
+        })
+        
+        // main difference
+        // you can add events to a subject
+        subject.onNext(5555)
+
+        
     }
 }
 
