@@ -9,8 +9,6 @@ import UIKit
 import RxSwift
 import RxRelay
 
-
-
 class MainVC: UIViewController {
     let disposeBag = DisposeBag()
     
@@ -18,7 +16,8 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        diffBetweenObservableSubject()
+        
+        Chapter01Challenge01.run()
     }
 }
 extension MainVC{
@@ -28,7 +27,7 @@ extension MainVC{
         let observable = Observable<Int>.of(1, 2, 3, 4, 5)
         
         // observable is read-only means that it does not accept values.
-        observable.onNext()
+//        observable.onNext()
         
         // you can only subscribe to observable
         observable.subscribe({

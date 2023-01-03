@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43B344566CF0CF6995CEA85E /* Pods_TryRxSwiftNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD215E4F073E06738F546B30 /* Pods_TryRxSwiftNew.framework */; };
 		EF653104295DD77800F4E4C9 /* Chapter02-Observables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF653103295DD77800F4E4C9 /* Chapter02-Observables.swift */; };
+		EF81834E29647BF90097D0C1 /* Chapter05-challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81834D29647BF90097D0C1 /* Chapter05-challenge1.swift */; };
 		EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA49295340560018C435 /* AppDelegate.swift */; };
 		EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4B295340560018C435 /* SceneDelegate.swift */; };
 		EF96DA4E295340560018C435 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4D295340560018C435 /* MainVC.swift */; };
@@ -24,6 +25,7 @@
 		9CA0B907DE5A3C61A7555889 /* Pods-TryRxSwiftNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryRxSwiftNew.release.xcconfig"; path = "Target Support Files/Pods-TryRxSwiftNew/Pods-TryRxSwiftNew.release.xcconfig"; sourceTree = "<group>"; };
 		DD215E4F073E06738F546B30 /* Pods_TryRxSwiftNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryRxSwiftNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF653103295DD77800F4E4C9 /* Chapter02-Observables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter02-Observables.swift"; sourceTree = "<group>"; };
+		EF81834D29647BF90097D0C1 /* Chapter05-challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter05-challenge1.swift"; sourceTree = "<group>"; };
 		EF96DA46295340560018C435 /* TryRxSwiftNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryRxSwiftNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF96DA49295340560018C435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96DA4B295340560018C435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				EFE356E92958E08300590284 /* Ch03-Challenge02.swift */,
 				EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */,
 				EF653103295DD77800F4E4C9 /* Chapter02-Observables.swift */,
+				EF81834D29647BF90097D0C1 /* Chapter05-challenge1.swift */,
 			);
 			path = TryRxSwiftNew;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */,
 				EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */,
 				EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */,
+				EF81834E29647BF90097D0C1 /* Chapter05-challenge1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
