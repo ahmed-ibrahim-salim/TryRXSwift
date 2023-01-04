@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your device&apos;s photo library to allow you to select photos for your collage</string>
 </dict>
 </plist>

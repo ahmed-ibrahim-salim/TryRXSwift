@@ -13,9 +13,16 @@
 		EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA49295340560018C435 /* AppDelegate.swift */; };
 		EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4B295340560018C435 /* SceneDelegate.swift */; };
 		EF96DA4E295340560018C435 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96DA4D295340560018C435 /* MainVC.swift */; };
-		EF96DA51295340560018C435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA4F295340560018C435 /* Main.storyboard */; };
 		EF96DA53295340570018C435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA52295340570018C435 /* Assets.xcassets */; };
 		EF96DA56295340570018C435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF96DA54295340570018C435 /* LaunchScreen.storyboard */; };
+		EFCDA5B929656FCF0087B465 /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B229656FCF0087B465 /* PhotoWriter.swift */; };
+		EFCDA5BA29656FCF0087B465 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B329656FCF0087B465 /* PhotoCell.swift */; };
+		EFCDA5BB29656FCF0087B465 /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B429656FCF0087B465 /* UIImage+Collage.swift */; };
+		EFCDA5BC29656FCF0087B465 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B529656FCF0087B465 /* MainViewController.swift */; };
+		EFCDA5BE29656FCF0087B465 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B729656FCF0087B465 /* PhotosViewController.swift */; };
+		EFCDA5BF29656FCF0087B465 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */; };
+		EFCDA5C22965709A0087B465 /* CombineSt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDA5C02965709A0087B465 /* CombineSt.storyboard */; };
+		EFCDA5C5296570FE0087B465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDA5C3296570FE0087B465 /* Main.storyboard */; };
 		EFE356EA2958E08400590284 /* Ch03-Challenge02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356E92958E08300590284 /* Ch03-Challenge02.swift */; };
 		EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */; };
 /* End PBXBuildFile section */
@@ -30,10 +37,17 @@
 		EF96DA49295340560018C435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96DA4B295340560018C435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EF96DA4D295340560018C435 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		EF96DA50295340560018C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF96DA52295340570018C435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF96DA55295340570018C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF96DA57295340570018C435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCDA5B229656FCF0087B465 /* PhotoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
+		EFCDA5B329656FCF0087B465 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		EFCDA5B429656FCF0087B465 /* UIImage+Collage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Collage.swift"; sourceTree = "<group>"; };
+		EFCDA5B529656FCF0087B465 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EFCDA5B729656FCF0087B465 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		EFCDA5C12965709A0087B465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CombineSt.storyboard; sourceTree = "<group>"; };
+		EFCDA5C4296570FE0087B465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFE356E92958E08300590284 /* Ch03-Challenge02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ch03-Challenge02.swift"; sourceTree = "<group>"; };
 		EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter03-Subjects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,11 +102,12 @@
 		EF96DA48295340560018C435 /* TryRxSwiftNew */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDA5B129656FCF0087B465 /* combineSt */,
 				EF96DA49295340560018C435 /* AppDelegate.swift */,
 				EF96DA4B295340560018C435 /* SceneDelegate.swift */,
 				EF96DA4D295340560018C435 /* MainVC.swift */,
-				EF96DA4F295340560018C435 /* Main.storyboard */,
 				EF96DA52295340570018C435 /* Assets.xcassets */,
+				EFCDA5C3296570FE0087B465 /* Main.storyboard */,
 				EF96DA54295340570018C435 /* LaunchScreen.storyboard */,
 				EF96DA57295340570018C435 /* Info.plist */,
 				EFE356E92958E08300590284 /* Ch03-Challenge02.swift */,
@@ -101,6 +116,20 @@
 				EF81834D29647BF90097D0C1 /* Chapter05-challenge1.swift */,
 			);
 			path = TryRxSwiftNew;
+			sourceTree = "<group>";
+		};
+		EFCDA5B129656FCF0087B465 /* combineSt */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDA5C02965709A0087B465 /* CombineSt.storyboard */,
+				EFCDA5B229656FCF0087B465 /* PhotoWriter.swift */,
+				EFCDA5B329656FCF0087B465 /* PhotoCell.swift */,
+				EFCDA5B429656FCF0087B465 /* UIImage+Collage.swift */,
+				EFCDA5B529656FCF0087B465 /* MainViewController.swift */,
+				EFCDA5B729656FCF0087B465 /* PhotosViewController.swift */,
+				EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */,
+			);
+			path = combineSt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +194,8 @@
 			files = (
 				EF96DA56295340570018C435 /* LaunchScreen.storyboard in Resources */,
 				EF96DA53295340570018C435 /* Assets.xcassets in Resources */,
-				EF96DA51295340560018C435 /* Main.storyboard in Resources */,
+				EFCDA5C22965709A0087B465 /* CombineSt.storyboard in Resources */,
+				EFCDA5C5296570FE0087B465 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,10 +249,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF653104295DD77800F4E4C9 /* Chapter02-Observables.swift in Sources */,
+				EFCDA5BC29656FCF0087B465 /* MainViewController.swift in Sources */,
+				EFCDA5BA29656FCF0087B465 /* PhotoCell.swift in Sources */,
 				EF96DA4E295340560018C435 /* MainVC.swift in Sources */,
+				EFCDA5BB29656FCF0087B465 /* UIImage+Collage.swift in Sources */,
 				EFE356EA2958E08400590284 /* Ch03-Challenge02.swift in Sources */,
+				EFCDA5BF29656FCF0087B465 /* UIViewController+Rx.swift in Sources */,
+				EFCDA5B929656FCF0087B465 /* PhotoWriter.swift in Sources */,
 				EF96DA4A295340560018C435 /* AppDelegate.swift in Sources */,
 				EF96DA4C295340560018C435 /* SceneDelegate.swift in Sources */,
+				EFCDA5BE29656FCF0087B465 /* PhotosViewController.swift in Sources */,
 				EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */,
 				EF81834E29647BF90097D0C1 /* Chapter05-challenge1.swift in Sources */,
 			);
@@ -231,20 +267,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF96DA4F295340560018C435 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF96DA50295340560018C435 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF96DA54295340570018C435 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EF96DA55295340570018C435 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EFCDA5C02965709A0087B465 /* CombineSt.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCDA5C12965709A0087B465 /* Base */,
+			);
+			name = CombineSt.storyboard;
+			sourceTree = "<group>";
+		};
+		EFCDA5C3296570FE0087B465 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCDA5C4296570FE0087B465 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
