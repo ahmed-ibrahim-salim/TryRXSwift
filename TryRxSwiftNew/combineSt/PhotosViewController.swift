@@ -35,15 +35,29 @@ class PhotosViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // when authorized reload data
         authorised
             .skip(while: { !$0 })
             .take(1)
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 self?.photos = PhotosViewController.loadPhotos()
                 DispatchQueue.main.async {
                     self?.collectionView?.reloadData()
                 }
             })
+        
+        // when not authorized show error
+        authorised
+          .skip(1)
+          .takeLast(1)
+          .filter { !$0 }
+          .subscribe(onNext: { [weak self] _ in
+            guard let errorMessage = self?.errorMessage else { return }
+            DispatchQueue.main.async(execute: errorMessage)
+          })
+          .disposed(by: bag)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,7 +65,22 @@ class PhotosViewController: UICollectionViewController {
         // on complete to terminate observable
         selectedPhotosSubject.onCompleted()
     }
-    
+    private func errorMessage() {
+        alert(title: "No access to Camera Roll",
+              text: "You can grant access to Combinestagram from the Settings app")
+            .asObservable()
+            .take(for: .seconds(5), scheduler: MainScheduler.instance)
+            .subscribe(onCompleted: {
+                [weak self] in
+                
+                // dismiss alert after received completed event
+                self?.dismiss(animated: true)
+                // pop controller after received completed event
+                self?.navigationController?.popViewController(animated: true)
+            })
+             .disposed(by: bag)
+    }
+            
     // MARK: UICollectionView
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
