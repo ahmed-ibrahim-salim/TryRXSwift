@@ -23,6 +23,7 @@
 		EFCDA5BF29656FCF0087B465 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */; };
 		EFCDA5C22965709A0087B465 /* CombineSt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDA5C02965709A0087B465 /* CombineSt.storyboard */; };
 		EFCDA5C5296570FE0087B465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDA5C3296570FE0087B465 /* Main.storyboard */; };
+		EFCDA5C729658BEC0087B465 /* PHPhotoLibrary+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDA5C629658BEC0087B465 /* PHPhotoLibrary+Rx.swift */; };
 		EFE356EA2958E08400590284 /* Ch03-Challenge02.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356E92958E08300590284 /* Ch03-Challenge02.swift */; };
 		EFE356EC2958E27D00590284 /* Chapter03-Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		EFCDA5C12965709A0087B465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CombineSt.storyboard; sourceTree = "<group>"; };
 		EFCDA5C4296570FE0087B465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFCDA5C629658BEC0087B465 /* PHPhotoLibrary+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Rx.swift"; sourceTree = "<group>"; };
 		EFE356E92958E08300590284 /* Ch03-Challenge02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ch03-Challenge02.swift"; sourceTree = "<group>"; };
 		EFE356EB2958E27D00590284 /* Chapter03-Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chapter03-Subjects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				EFCDA5B529656FCF0087B465 /* MainViewController.swift */,
 				EFCDA5B729656FCF0087B465 /* PhotosViewController.swift */,
 				EFCDA5B829656FCF0087B465 /* UIViewController+Rx.swift */,
+				EFCDA5C629658BEC0087B465 /* PHPhotoLibrary+Rx.swift */,
 			);
 			path = combineSt;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				EF653104295DD77800F4E4C9 /* Chapter02-Observables.swift in Sources */,
 				EFCDA5BC29656FCF0087B465 /* MainViewController.swift in Sources */,
+				EFCDA5C729658BEC0087B465 /* PHPhotoLibrary+Rx.swift in Sources */,
 				EFCDA5BA29656FCF0087B465 /* PhotoCell.swift in Sources */,
 				EF96DA4E295340560018C435 /* MainVC.swift in Sources */,
 				EFCDA5BB29656FCF0087B465 /* UIImage+Collage.swift in Sources */,

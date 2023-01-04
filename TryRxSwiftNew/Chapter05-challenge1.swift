@@ -7,7 +7,7 @@
 import Foundation
 import RxSwift
 
-class Chapter01Challenge01{
+class Chapter05Challenge01{
     
     let disposeBag = DisposeBag()
     
